@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/png" href="./images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <title>V2</title>
+    <title>Brian Santos | Web Developer</title>
 </head>
 <body>
 <div class="container">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- this href will serve as the starting point and will point back home when needed -->
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="./index.html">
         <img src="./images/logo.png" width="125" height="125" alt="Logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,15 +23,16 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-        <a class="nav-item nav-link" href="#">Work</a>
-        <a class="nav-item nav-link" href="#">About</a>
-        <a class="nav-item nav-link" href="#">Contact</a>
+        <a class="nav-item nav-link" href="./work.html">Work</a>
+        <a class="nav-item nav-link" href="./about.html">About</a>
+        <a class="nav-item nav-link" href="./contact.php">Contact</a>
         </div>
     </div>
     <span class="navbar-text">
-        <a href="https://github.com/brianmsantos"><img src="images/ios-github.png" class="social" height="50" width="50" alt="GitHub" /></a>
-        <a href="https://www.linkedin.com/in/sbsoftware/"><img src="images/ios-linkedin.png" class="social" height="50" width="50" alt="LinkedIn" /></a>
-        <a href="https://stackoverflow.com/users/9221958/brianmsantos?tab=profile"><img src="images/ios-stackoverflow.png" height="50" width="50" class="social" alt="Stackoverflow" /></a>
+        <a href="https://docs.google.com/document/d/1LYy9CE2laHRZHHysBytbEKZfAZo7tS8OB5X1bs6NJnQ/edit?usp=sharing" target="_blank"><img src="images/resume.png" class="social" height="55" width="55" alt="Resume" /></a>
+        <a href="https://github.com/brianmsantos" target="_blank"><img src="images/ios-github.png" class="social" height="55" width="55" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/sbsoftware/" target="_blank"><img src="images/ios-linkedin.png" class="social" height="55" width="55" alt="LinkedIn" /></a>
+        <a href="https://stackoverflow.com/users/9221958/brianmsantos?tab=profile" target="_blank"><img src="images/ios-stackoverflow.png" height="55" width="55" class="social" alt="Stackoverflow" /></a>
     </span>
 </nav>
 </div>
@@ -42,22 +43,30 @@
             <img src="./images/portimage.jpg" height="320" width="320" alt="Me">
         </div>
         <div class="col-8">
+            <br>
             <h1 id="line1">Hi, I'm Brian Santos</h1>
             <br>
             <h2 id="line2">I Design & Build Websites</h3>
             <br>
-            <h4 id="intro">I'm a motivated Full Stack Developer and problem solver. Along with 
+            <p>I'm a motivated Full Stack Developer and problem solver. Along with 
                 an expertise in problem solving I also bring a wealth of other skills 
                 like strong analytical thinking, project management, strong team 
-                skills and excellent and verbal written communication.</h5>
+                skills and excellent and verbal written communication.</p>
         </div>
     </div>
     <div class="row" id="button-row">
         <div class="col-4"></div>
         <div class="col-8">
+            <form action="https://www.amazon.com/" target="_blank">
             <section class="flat">
-            <button>My Resume</button> <button>My Work</button>
+            <button>My Work</button>
+            <form action="https://www.ebay.com/" target="_blank">
+            <button>About Me</button>
+            <form action="https://www.facebook.com/" target="_blank">
+            <button>Contact Me</button>
             </section>
+            </form>
+           
         </div>
     </div>
 </div>
@@ -65,26 +74,46 @@
 <div id="skills">
     <div id="container">
         <div id="skill-box">
-        <h1 id="skills">Some of my Technical Skills</h1>
+        <h2 id="skills">Some of my Technical Skills</h2>
         </div>
-        <div class="row">
+        <div class="row" id="row2">
             <div class=col-2>
-            <img src="./images/html5.png" height="128" width="128" alt="html">
+            <img src="./images/html5.png" height="96" width="96" alt="html">
             </div>
             <div class=col-2>
-            <img src="./images/css3.png" height="128" width="128" alt="css">   
+            <img src="./images/css3.png" height="96" width="96" alt="css">   
             </div>
             <div class=col-2>
-            <img src="./images/javascript_logo.png" height="128" width="128" alt="js">
+            <img src="./images/javascript_logo.png" height="96" width="96" alt="js">
             </div>
             <div class=col-2>
-            <img src="./images/jquery-image.png" height="96" width="128" alt="jquery"> 
+            <img src="./images/react.png" height="96" width="96" alt=""> 
             </div>
             <div class=col-2>
-            <img src="./images/Bootstrap-Logo.png" height="128" width="128" alt="bootstrap">
+            <img src="./images/Bootstrap-Logo.png" height=height="96" width="96" alt="bootstrap">
             </div>
             <div class=col-2>
-                <img src="./images/sassy.png" height="128" width="128" alt="sass">
+                <img src="./images/sassy.png" height="72" width="96" alt="sass">
+            </div>
+        </div>
+        <div class="row" id="row3">
+            <div class="col-2">
+                <img src="./images/mysql.png" height="65" width="96" alt="">
+            </div>
+            <div class="col-2">
+                <img src="./images/mongo.png" id="mongo" height="27" width="96" alt="">
+            </div>
+            <div class="col-2">
+                <img src="./images/expressnode.png" id="node" height="53" width="96" alt="">
+            </div>
+            <div class="col-2">
+                <img src="./images/jquery-image.png" id="jquery" height="23" width="96" alt="jquery"> 
+            </div>
+            <div class="col-2">
+                <img src="./images/aws.png" height="36" width="96" alt="">
+            </div>
+            <div class="col-2">
+                <img src="./images/webpack.png" height="37" width="96" alt="">
             </div>
         </div>
     </div>
