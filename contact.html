@@ -1,20 +1,4 @@
-<!-- <?php
-
-if($_POST["submit"]) {
-    $recipient="your@email.address";
-    $subject="Form to email message";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["senderEmail"];
-    $message=$_POST["message"];
-
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
-};
-?>
-<!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,7 +8,7 @@ if($_POST["submit"]) {
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/png" href="./images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <title>About Me</title>
+    <title>Contact Me</title>
 </head>
 <body>
 <div class="container">
@@ -68,22 +52,75 @@ if($_POST["submit"]) {
 
 <hr>
 <div class="container">
-        <?=$thankYou ?>
+        <form id="contact-form" method="post" action="contact.php" role="form">
 
-        <form method="post" action="contact.php">
-            <label>Name:</label>
-            <input name="sender">
-    
-            <label>Email address:</label>
-            <input name="senderEmail">
-    
-            <label>Message:</label>
-            <textarea rows="5" cols="20" name="message"></textarea>
-    
-            <input type="submit" name="submit">
-        </form>
+                <div class="messages"></div>
+            
+                <div class="controls">
+            
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_name">Firstname *</label>
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_lastname">Lastname *</label>
+                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_email">Email *</label>
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_need">Please specify your need *</label>
+                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                    <option value=""></option>
+                                    <option value="Request quotation">Request quotation</option>
+                                    <option value="Request order status">Request order status</option>
+                                    <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="form_message">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn-success btn-send" value="Send message">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-muted">
+                                <strong>*</strong> Required Fields
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+            </form>
 </div>
 
+<hr>
 
 
 <div class="footer">Copyright &copy; Brian Santos 2018</div>
