@@ -192,15 +192,18 @@ section.flat button.active {
     font-style: italic;
 }
 
-.col-8 a img{
+.col-lg-8 a img{
 -webkit-transition: opacity 1s ease-in-out;
 -moz-transition: opacity 1s ease-in-out;-o-transition:
 opacity 1s ease-in-out;
 transition: opacity 1s ease-in-out;
 }
 
-.col-8 a img:hover{
+.col-lg-8 a img:hover{
     opacity: .5;
 }
 
+.images{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
