@@ -1,0 +1,52 @@
+.project-row{
+    padding: 20px 0 20px 0;
+}
+
+.project-text-left{
+    background-color: rgb(247, 247, 247);
+    padding-left: 140px;
+    padding-top: 50px
+}
+
+.project-image-right{
+    background-color: rgb(247, 247, 247);
+    padding-right: 80px;
+}
+
+.project-text-right{
+    background-color: rgb(247, 247, 247);
+    padding-right: 140px;
+    padding-top: 50px
+}
+
+.project-image-left{
+    background-color: rgb(247, 247, 247);
+    padding-left: 80px;
+}
+
+.project-images{
+    margin: auto;    
+    display: block;
+}
+
+.project-image-right a img{
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;-o-transition:
+    opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    }
+
+.project-image-right a img:hover{
+    opacity: .7;
+}
+
+.project-image-left a img{
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;-o-transition:
+    opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    }
+
+.project-image-left a img:hover{
+    opacity: .7;
+}

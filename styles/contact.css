@@ -1,0 +1,31 @@
+.contact-row{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.block-row{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    text-align: center
+}
+
+.block{
+    display: inline-block;
+    background:  rgb(247, 247, 247);
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    outline-color: rgb(82, 80, 80);
+    border: 1px solid;   
+}
+
+.block:hover{
+    background:  rgb(82, 80, 80);
+}
+
+.social-contact{
+    margin-top: 30px;
+    height: 30px;
+    width: 30px;
+}
